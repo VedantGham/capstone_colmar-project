@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .info-section {
+            background-color: #d3d3d3;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .info-section img {
+            padding-left: 24px;
+            max-width: 60%;
+            margin-right: 20px;
+        }
+        .info-section div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .info-section h2 {
+            color:rgba(70, 69, 69, 0.93);
+        }
+        .content-section {
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            padding-left: 50px;
+            padding-right: 24px;
+        }
+        .content-section .left-column {
+            max-width: 100%;
+            padding-top: 32px;
+        }
+        .content-section .right-column {
+            height: 100px;
+            width: 100px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+        }
+        .gray-box {
+            background-color: #d3d3d3;
+            padding: 15px;
+        }
+        .additional-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d3d3d3;
+        }
+        .additional-grid .grid-item {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .additional-grid img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/ic-logo.svg" alt="Logo" width="30" height="30" class="d-inline-block align-top"> 
+                COLMARACADEMY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="border-right: 16px solid skyblue;">On Campus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="border-right: 16px solid skyblue;">Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="border-right: 16px solid skyblue;">For Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="button">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="info-section">
+            <img src="/banner.jpg" alt="Info Image">
+            <div>
+                <h2 style="font-size: 40px; text-align: justify;">Learn something<br> new everyday</h2>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                <div><button type="button" class="btn btn-secondary btn-sm">Start here</button></div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <div class="left-column">
+                <img src="/information-main.jpg" alt="Left Image" class="img-fluid" style="height: 400px;">
+                <div style="width: 80%;">
+                    <h3><br>It doesn't hurt to keep practicing</h3><p><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatum minima molestiae. Inventore sint, quod tenetur amet deleniti cupiditate suscipit, commodi libero rem quibusdam minus doloremque facilis, aliquam itaque beatae eligendi pariatur maxime! Dolore laudantium necessitatibus, adipisci, id enim deserunt possimus quis placeat nam doloremque similique nihil laboriosam, beatae facere?<br><br><br><br>Emanuel, Sr Strategist at Hiring.com</p>
+                </div>
+                </div>
+            <div class="right-column">
+                <div class="image-grid">
+                    <div style="display: flex;">
+                        <img src="/information-orientation.jpg" alt="Image 1" style="height: 250px; width: 250px;" >
+                        <h6 style= "text-size:40px; text-align: justify; padding: 20px;">Orientation dateTue 10/11 & Wed 10/12: 8am-3pm<br><a src="" style="color:blue;">Read more</a></h6>
+                    </div>
+                    <div style="display: flex;">
+                        <img src="/information-campus.jpg" alt="Image 2" style="height: 250px; width: 250px;">
+                        <h6 style= "text-size:40px; text-align: justify; padding: 20px;">Our campusFind which campus is close by you<br><a src="" style="color:blue;">Read more</a></h6>
+                    </div>
+                    <div style="display: flex;">
+                        <img src="/information-guest-lecture.jpg" alt="Image 3" style="height: 250px; width: 250px;">
+                        <h6 style= "text-size:40px; text-align: justify; padding: 20px;">Our Guest Lecture<br><br>Join a keynote with Oliver Sack about music in medical treatment<br><a src="" style="color:blue;">Read more</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="levin" class="additional-grid" style="margin-top: 250px;">
+            <div class="grid-item">
+                <img src="/course-software.jpg" alt="Grid Image 1"><br><br>
+                <div style="display: grid; margin-left: 20px; padding: 50px">
+                <h3>Software Engineer</h3>
+                <p>Courses<br><br> Web development, Moible  development,IOT, APIs</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="/course-computer-art.jpg" alt="Grid Image 2"><br><br>
+                <h3 style="display: flex; text-align: justiy;">Computer art</h3>
+                <p style="display: flex; text-align: left;">COURSES<br><br> Web development, Moible  development,IOT, APIs</p>
+            </div>
+            <div class="grid-item">
+                <img src="/course-design.jpg" alt="Grid Image 3"><br><br>
+                <h3 style="display: flex; text-align: justiy;">Design</h3>
+                <p style="display: flex; text-align: left;">COURSES<br><br> Imaging & Design, Web Design, Motion Grpahhics & Visual Design</p>
+            </div>
+            <div class="grid-item">
+                <img src="/course-data.jpg" alt="Grid Image 4"><br><br>
+                <h3 style="display: flex; text-align: justiy;">Data</h3>
+                <p style="display: flex; text-align: left;">COURSES<br><br> Data Science,Big Data, SQL, Data Visulaization</p>
+            </div>
+            <div class="grid-item">
+                <img src="/course-business.jpg" alt="Grid Image 5"><br><br>
+                <h3 style="display: flex; text-align: justiy;">Business</h3>
+                <p style="display: flex; text-align: left;">COURSES<br><br> Product Development, Business Development,Startup</p>
+            </div>
+            <div class="grid-item">
+                <img src="/course-marketing.jpg" alt="Grid Image 6"><br><br>
+                <h3 style="display: flex; text-align: justiy;">Marketing</h3>
+                <p style="display: flex; text-align: left;">COURSES<br><br> Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: top;">
+            <h2 >Thesis Exhibit</h2>
+        </div>
+        <div class="content-section">
+
+            <div class="left-column" style=""><br><br>
+                <video width="70%" height="70%" controls autoplay>
+                    <source src="/thesis.mp4" type="video/mp4">
+                </video>
+                <div style="width:60%;">
+                    <h2>Reimagine urban</h2>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur vel vitae quibusdam. A, natus recusandae explicabo, iure hic dolorum maxime quam labore facilis dolore sequi. Veritatis debitis in ullam accusantium aperiam placeat nihil assumenda! Optio doloremque non laboriosam ad cupiditate, sunt fugit magnam, hic reiciendis atque minima quia aperiam consequatur?"</p>
+                </div>    
+        </div>
+            <div class="right-column">
+                <d class="image-grid">
+                    <div class="gray-box">
+                    
+                        <div style="display: flex; height: 200px;">
+                            <img src="/thesis-fisma.jpg" alt="Image 1">
+                            <h6 style= "text-size:40px; text-align: justify; padding: 20px;">Fisma: Design and Prototype<br>Designer showcase of new prototype product</h6></div>
+                        </div>
+                    <div>
+                    
+                    <div style="display: flex; width: 500px; height: 200px;">
+                        <img src="/thesis-now-and-then.jpg" alt="Image 2">
+                        <h6 style= "text-size:40px; text-align: justify; padding: 20px;">Now and then<br>Research study about New York</h6></div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container-fluid" style="margin-top: 32px;width: 100%;text-align: center;padding-right: 40px;">
+        <footer>
+          <div class="col-md-12" style="bottom: 0;width: 100%; display: flex;text-align: center;background-color: rgb(205, 187, 160);height: 30px;justify-content: center;" >
+          <h6 style="text-align: center;">© 2016 Colmar Academy, All rights reserved.</h6> 
+          <a href="#levin"><button>Press me!</button></a>
+        </div>
+        </footer>
+        </div>
+</body>
+</html>
